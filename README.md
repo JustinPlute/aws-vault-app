@@ -53,7 +53,7 @@ $ npm i
 $ sls deploy --stage dev
 ```
 
-## Deploying Secrets into SSM
+### Deploying Secrets into SSM
 
 [Amazon EC2 Systems Manager Parameter Store](https://aws.amazon.com/ec2/systems-manager/parameter-store/) can centrally and securely manage secrets. And with IAM roles, you can restrict AWS resources to only access the secrets it needs for any particular environment.
 

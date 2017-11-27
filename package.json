@@ -1,0 +1,17 @@
+{
+  "name": "aws-vault-app",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Sample application demonstrating AWS EC2 SSM Param Store",
+  "author": "Justin Plute",
+  "repository": "https://git.github.com/rplute/aws-vault-app/",
+  "main": "index.js",
+  "dependencies": {
+    "serverless": "^1.24.1",
+    "serverless-python-requirements": "^3.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT"
+}

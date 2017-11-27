@@ -27,17 +27,18 @@ $ pip install -r requirements.txt
 
 ### Deploying MySQL RDS:
 
-Upload the CloudFormation template in the AWS Web Console or use the AWS CLI:
+Upload the CloudFormation template included in this project in AWS Web Console or use the AWS CLI:
 
 ```bash
-$ aws cloudformation deploy --template-file /cloudformation/mysql.rds.yaml --stack-name my-mysql-rds --parameter-overrides DBUsername=Value1 DBPassword=Value2
+$ aws cloudformation deploy --template-file /cloudformation/mysql.rds.yaml \
+  --stack-name my-mysql-rds --parameter-overrides DBUsername=Value1 DBPassword=Value2
 ```
 
-Upon creation, take node of the RDS endpoint and update the `db_host` value in the `rds_config.py` file.
+Upon creation, take note of the RDS endpoint and update the `db_host` value in the `rds_config.py` file.
 
 ### Deploying Python App:
 
-This project uses the [serverless framework](https://serverless.com/) and the plug-in, [serverless-python-requirements](https://www.npmjs.com/package/serverless-python-requirements) for deploying to AWS. You'll need to install them:
+This project uses the [serverless framework](https://serverless.com/) and the plug-in, [serverless-python-requirements](https://www.npmjs.com/package/serverless-python-requirements) for deploying to AWS. You'll need to install them using `npm`:
 
 ```bash
 # installs serverless framework and python-requirements plugin

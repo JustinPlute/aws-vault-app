@@ -6,13 +6,11 @@
 3. [Deploying](#deploying)
 4. [Contributing](#deploying)
 
-<br><br>
 <a name="intro"></a>
 ## INTRODUCTION
 
 This is a simple Python Lambda function that pulls secrets from the **EC2 SSM Param Store** and connects to a MySQL RDS. The source is used in conjuction with the following blog article, <a href="https://blog.justinplute.com/ec2-ssm-param-store-the-aws-vault-for-storing-secrets/" target="_blank">EC2 SSM Param Store: The AWS Vault for storing secrets</a>.
 
-<br><br>
 <a name="getting-started"></a>
 ## GETTING STARTED
 
@@ -24,7 +22,6 @@ $ source ssm/bin/activate
 $ pip install -r requirements.txt
 ```
 
-<br><br>
 <a name="deploying"></a>
 ## DEPLOYING
 
@@ -56,7 +53,7 @@ $ npm i
 $ sls deploy --stage dev
 ```
 
-**Inserting values into SSM**
+## Deploying Secrets into SSM
 
 [Amazon EC2 Systems Manager Parameter Store](https://aws.amazon.com/ec2/systems-manager/parameter-store/) can centrally and securely manage secrets. And with IAM roles, you can restrict AWS resources to only access the secrets it needs for any particular environment.
 
@@ -69,7 +66,6 @@ $ ./scripts/deploy_secrets.sh -e dev -u myuser -p mypassword
 
 This will deploy secrets under the path `/env/dev`. **NOTE:** `-e` is for environment, `-u` is for user, and `-p` is for password.
 
-<br><br>
 <a name="contributing"></a>
 ## Contributing
 

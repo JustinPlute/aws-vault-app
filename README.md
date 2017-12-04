@@ -9,7 +9,7 @@
 <a name="intro"></a>
 ## INTRODUCTION
 
-This is a simple Python Lambda function that pulls secrets from the **EC2 SSM Param Store** and connects to a MySQL RDS. The source is used in conjuction with the following blog article, <a href="http://blog.justinplute.com/ec2-ssm-param-store-the-aws-vault-for-storing-secrets/" target="_blank">EC2 SSM Param Store: The AWS Vault for storing secrets</a>.
+This is a simple Python Lambda function that pulls secrets from the **EC2 SSM Param Store** and connects to a MySQL RDS. The source is used in conjuction with the following blog article, <a href="https://justinplute.com/ec2-ssm-param-store-the-aws-vault-for-storing-secrets/" target="_blank">EC2 SSM Param Store: The AWS Vault for storing secrets</a>.
 
 <a name="getting-started"></a>
 ## GETTING STARTED
